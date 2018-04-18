@@ -32,45 +32,45 @@ const { readFileSync, writeFileSync } = require('fs');
 const postcss = require('postcss');
 const folderWatcher = require('postcss-watch-folder');
 const opts = {
-	folder: './your/stylesheets/folder',
-	main: './your/stylesheets/folder/main.css'
+  folder: './your/stylesheets/folder',
+  main: './your/stylesheets/folder/main.css'
 }
 
 postcss([folderWatcher(opts)])
-	.process(css, {
-		from: './your/stylesheets/folder/main.css',
-		to: './your/dist/folder/app.css'
-	})
-	.then(result => {
-		writeFileSync('./your/dist/folder/app.css', result.css);
-	});
+  .process(css, {
+    from: './your/stylesheets/folder/main.css',
+    to: './your/dist/folder/app.css'
+  })
+  .then(result => {
+    writeFileSync('./your/dist/folder/app.css', result.css);
+  });
 ```
 
 Webpack:
 
 ```webpack.config.js
 module.exports = {
-	...
-	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: [
-					{
-						loader: 'postcss-loader',
-						options: {
-							plugins: [
-								require('postcss-watch-folder')({
-									folder: './your/stylesheets/folder',
-									main: './your/stylesheets/folder/main.css'
-								}),
-								...other postcss plugins
-							],
-						}
-					}
-				]
-			}
-		]
-	}
+  ...
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('postcss-watch-folder')({
+                  folder: './your/stylesheets/folder',
+                  main: './your/stylesheets/folder/main.css'
+                }),
+                ...other postcss plugins
+              ],
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
