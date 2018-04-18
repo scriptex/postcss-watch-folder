@@ -74,3 +74,16 @@ module.exports = {
   }
 }
 ```
+
+## Options
+
+There are two configuration options. They are both required and the plugin will not work if they are not provided:
+
+```
+folder: './assets/styles/',         // The folder to watch
+main  : './assets/styles/main.css'  // The main styles entrypoint
+```
+
+## License
+
+MIT
