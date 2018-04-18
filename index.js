@@ -1,32 +1,40 @@
-var fs = require('fs');
-var postcss = require('postcss');
-var chokidar = require('chokidar');
+const postcss = require('postcss');
+const chokidar = require('chokidar');
+const { appendFile, readFile, writeFileSync, existsSync } = require('fs');
 
-// use fs-extra (promisified fs)
+const PRINT = '/*CHANGE*/';
+const PRINT_REG = /\n?\/\*CHANGE\*\//gm;
 
-module.exports = postcss.plugin('postcss-watch-folder', function(opts) {
-	opts = opts || {};
+module.exports = postcss.plugin('postcss-watch-folder', options => {
+	const opts = {
+		folder: './assets/styles/',
+		main: './assets/styles/main.css',
+		...options
+	};
 
-	if (!opts.folder) {
-		return;
+	if (!existsSync(opts.folder)) {
+		throw new TypeError(
+			`postcss-watch-folder: The specified folder (${
+				opts.folder
+			}) could not be located.`
+		);
 	}
 
-	// Check of folder exists
+	if (!existsSync(opts.main)) {
+		throw new TypeError(
+			`postcss-watch-folder: The specified main file (${
+				opts.main
+			}) could not be located.`
+		);
+	}
 
-	var watcher = chokidar.watch(opts.folder, {
-		persistent: true
-	});
+	const watcher = chokidar.watch(opts.folder);
 
-	return function(root, result) {
-		return new Promise(function(resolve, reject) {
-			watcher.on('add', function(filepath) {
-				fs.readFile(filepath, 'utf8', function(err, data) {
-					if (err) {
-						reject(err);
-					}
-
-					root.prepend(data);
-					resolve();
+	return () => {
+		watcher.on('add', () => {
+			appendFile(opts.main, PRINT, () => {
+				readFile(opts.main, 'utf8', (err, data) => {
+					writeFileSync(opts.main, data.replace(PRINT_REG, ''));
 				});
 			});
 		});

@@ -1,16 +1,9 @@
 {
   "name": "postcss-watch-folder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "PostCSS plugin which watches folder for new files",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    "add",
-    "watch",
-    "folder"
-  ],
-  "author": "Atanas Atanasov <scriptex.bg@gmail.com> (http://atanas.info)",
+  "keywords": ["postcss", "css", "postcss-plugin", "add", "watch", "folder"],
+  "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
   "license": "MIT",
   "repository": "https://github.com/scriptex/postcss-watch-folder",
   "bugs": {
@@ -18,23 +11,7 @@
   },
   "homepage": "https://github.com/scriptex/postcss-watch-folder",
   "dependencies": {
+    "chokidar": "^2.0.3",
     "postcss": "^6.0.16"
-  },
-  "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-postcss": "^2.0.2",
-    "jest": "^22.4.2"
-  },
-  "scripts": {
-    "test": "jest && eslint *.js"
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
-    "env": {
-      "jest": true
-    }
-  },
-  "jest": {
-    "testEnvironment": "node"
   }
 }

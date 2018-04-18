@@ -1,29 +1,76 @@
-# postcss-watch-folder [![Build Status][ci-img]][ci]
+# postcss-watch-folder
 
-## TODO: README
+A [PostCSS](https://github.com/postcss/postcss) plugin to watch a folder for new files.
 
-[PostCSS] plugin PLUGIN_DESC.
+## Why?
 
-[postcss]: https://github.com/postcss/postcss
-[ci-img]: https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME.svg
-[ci]: https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME
+I've had issues when using globs to import stylesheets: `@import 'settings/**/*.scss';`.
+It appears that both SASS and PostCSS do not handle the event of adding files to a watched folder.
 
-```css
-.foo {
-	/* Input example */
-}
+This simple plugin solves this issue by watching for `add` event and updating the main entrypoint.
+
+## Install
+
+```
+npm i postcss-watch-folder --save-dev
 ```
 
-```css
-.foo {
-	/* Output example */
-}
+or
+
+```
+yarn add postcss-watch-folder --dev
 ```
 
 ## Usage
 
-```js
-postcss([require('PLUGIN_NAME')]);
+Standard:
+
+```
+const { resolve } = require('path');
+const { readFileSync, writeFileSync } = require('fs');
+
+const postcss = require('postcss');
+const folderWatcher = require('postcss-watch-folder');
+const opts = {
+	folder: './your/stylesheets/folder',
+	main: './your/stylesheets/folder/main.css'
+}
+
+postcss([folderWatcher(opts)])
+	.process(css, {
+		from: './your/stylesheets/folder/main.css',
+		to: './your/dist/folder/app.css'
+	})
+	.then(result => {
+		writeFileSync('./your/dist/folder/app.css', result.css);
+	});
 ```
 
-See [PostCSS] docs for examples for your environment.
+Webpack:
+
+```webpack.config.js
+module.exports = {
+	...
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: [
+					{
+						loader: 'postcss-loader',
+						options: {
+							plugins: [
+								require('postcss-watch-folder')({
+									folder: './your/stylesheets/folder',
+									main: './your/stylesheets/folder/main.css'
+								}),
+								...other postcss plugins
+							],
+						}
+					}
+				]
+			}
+		]
+	}
+}
+```
