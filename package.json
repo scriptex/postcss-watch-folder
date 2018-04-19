@@ -1,6 +1,6 @@
 {
   "name": "postcss-watch-folder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCSS plugin which watches folder for new files",
   "keywords": ["postcss", "css", "postcss-plugin", "add", "watch", "folder"],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
