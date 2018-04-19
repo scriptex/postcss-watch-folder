@@ -7,8 +7,8 @@ const PRINT_REG = /\n?\/\*CHANGE\*\//gm;
 
 module.exports = postcss.plugin('postcss-watch-folder', options => {
 	const opts = {
-		folder: './assets/styles/',
-		main: './assets/styles/main.css',
+		folder: '.',
+		main: './style.css',
 		...options
 	};
 
