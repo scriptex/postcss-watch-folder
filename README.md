@@ -1,3 +1,11 @@
+[![GitHub stars](https://img.shields.io/github/stars/scriptex/postcss-watch-folder.svg?style=social&label=Stars)](https://github.com/scriptex/postcss-watch-folder)
+[![npm](https://img.shields.io/npm/dt/postcss-watch-folder.svg)](https://www.npmjs.com/package/postcss-watch-folder)
+[![npm](https://img.shields.io/npm/v/postcss-watch-folder.svg)](https://www.npmjs.com/package/postcss-watch-folder)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder)
+[![license](https://img.shields.io/github/license/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder)
+[![Github file size](https://img.shields.io/github/size/scriptex/postcss-watch-folder/index.js.svg)](https://github.com/scriptex/postcss-watch-folder)
+
 # postcss-watch-folder
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to watch a folder for new files.
