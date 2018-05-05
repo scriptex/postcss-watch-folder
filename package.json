@@ -2,7 +2,14 @@
   "name": "postcss-watch-folder",
   "version": "0.1.1",
   "description": "PostCSS plugin which watches folder for new files",
-  "keywords": ["postcss", "css", "postcss-plugin", "add", "watch", "folder"],
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "add",
+    "watch",
+    "folder"
+  ],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
   "license": "MIT",
   "repository": "https://github.com/scriptex/postcss-watch-folder",
@@ -12,6 +19,6 @@
   "homepage": "https://github.com/scriptex/postcss-watch-folder",
   "dependencies": {
     "chokidar": "^2.0.3",
-    "postcss": "^6.0.16"
+    "postcss": "^6.0.22"
   }
 }
