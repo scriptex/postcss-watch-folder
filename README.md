@@ -12,8 +12,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/postcss-watch-folder/webpack.config.js/graphs/commit-activity)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
-[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
-[![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](http://ForTheBadge.com)
 
 # postcss-watch-folder
 
@@ -96,6 +94,10 @@ Default options are:
 folder: '.',           // Current working directory
 main  : './style.css'  // style.css located in CWD
 ```
+
+## Demo
+
+You can see a demo of the usage in [my webpack boilerplate](https://github.com/scriptex/webpack-mpa/blob/master/webpack.config.js#L147)
 
 ## License
 
