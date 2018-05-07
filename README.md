@@ -9,7 +9,7 @@
 [![license](https://img.shields.io/github/license/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/postcss-watch-folder/README.md)](https://github.com/scriptex/postcss-watch-folder/)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/scriptex/postcss-watch-folder/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/postcss-watch-folder/webpack.config.js/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/postcss-watch-folder/graphs/commit-activity)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
 
