@@ -36,13 +36,13 @@ This simple plugin solves this issue by watching for `add` event and updating th
 
 ## Install
 
-```
+```console
 npm i postcss-watch-folder --save-dev
 ```
 
 or
 
-```
+```console
 yarn add postcss-watch-folder --dev
 ```
 
@@ -50,7 +50,7 @@ yarn add postcss-watch-folder --dev
 
 Webpack:
 
-```webpack.config.js
+```javascript
 module.exports = {
   ...
   module: {
@@ -83,14 +83,14 @@ The location of this plugin does not matter. It can be placed as first or last i
 
 There are two configuration options. They are both required and the plugin will not work if they are not provided:
 
-```
+```javascript
 folder: './assets/styles/',         // The folder to watch
 main  : './assets/styles/main.css'  // The main styles entrypoint
 ```
 
 Default options are:
 
-```
+```javascript
 folder: '.',           // Current working directory
 main  : './style.css'  // style.css located in CWD
 ```
