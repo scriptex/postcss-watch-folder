@@ -1,18 +1,10 @@
-[![GitHub stars](https://img.shields.io/github/stars/scriptex/postcss-watch-folder.svg?style=social&label=Stars)](https://github.com/scriptex/postcss-watch-folder)
-[![GitHub forks](https://img.shields.io/github/forks/scriptex/postcss-watch-folder.svg?style=social&label=Fork)](https://github.com/scriptex/postcss-watch-folder/network#fork-destination-box)
 [![GitHub release](https://img.shields.io/github/release/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder/commits/master)
 [![Github file size](https://img.shields.io/github/size/scriptex/postcss-watch-folder/index.js.svg)](https://github.com/scriptex/postcss-watch-folder)
 [![npm](https://img.shields.io/npm/dt/postcss-watch-folder.svg)](https://www.npmjs.com/package/postcss-watch-folder)
 [![npm](https://img.shields.io/npm/v/postcss-watch-folder.svg)](https://www.npmjs.com/package/postcss-watch-folder)
-[![license](https://img.shields.io/github/license/scriptex/postcss-watch-folder.svg)](https://github.com/scriptex/postcss-watch-folder)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/postcss-watch-folder/README.md)](https://github.com/scriptex/postcss-watch-folder/)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/scriptex/postcss-watch-folder/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/postcss-watch-folder/graphs/commit-activity)
-[![dependencies Status](https://david-dm.org/scriptex/postcss-watch-folder/status.svg)](https://david-dm.org/scriptex/postcss-watch-folder)
-
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
 
 # postcss-watch-folder
 
