@@ -29,13 +29,13 @@ This simple plugin solves this issue by watching for `add` event and updating th
 
 ## Install
 
-```console
+```sh
 npm i postcss-watch-folder --save-dev
 ```
 
 or
 
-```console
+```sh
 yarn add postcss-watch-folder --dev
 ```
 
