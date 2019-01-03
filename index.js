@@ -13,19 +13,11 @@ module.exports = postcss.plugin('postcss-watch-folder', options => {
 	};
 
 	if (!existsSync(opts.folder)) {
-		throw new TypeError(
-			`postcss-watch-folder: The specified folder (${
-				opts.folder
-			}) could not be located.`
-		);
+		throw new TypeError(`postcss-watch-folder: The specified folder (${opts.folder}) could not be located.`);
 	}
 
 	if (!existsSync(opts.main)) {
-		throw new TypeError(
-			`postcss-watch-folder: The specified main file (${
-				opts.main
-			}) could not be located.`
-		);
+		throw new TypeError(`postcss-watch-folder: The specified main file (${opts.main}) could not be located.`);
 	}
 
 	const watcher = chokidar.watch(opts.folder);
