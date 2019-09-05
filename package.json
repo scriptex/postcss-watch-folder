@@ -19,6 +19,6 @@
 	"homepage": "https://github.com/scriptex/postcss-watch-folder",
 	"dependencies": {
 		"chokidar": "3.0.2",
-		"postcss": "7.0.17"
+		"postcss": "7.0.18"
 	}
 }
