@@ -120,10 +120,10 @@ picomatch@^2.0.4, picomatch@^2.2.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
   integrity sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
 
-postcss@8.0.4:
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.4.tgz#c2ce10272c83cb86083c59725ba673e445f6bc88"
-  integrity sha512-1XnscHU1hafSVykema78TOeBf1my7WThfK2jaSDtOQW90CAny63oEsWVC+EN/WSMSBpghq5PxUdPgozK693tJw==
+postcss@8.0.5:
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.5.tgz#8210e2363f85c35a88a188ce7a0828e93b1088d4"
+  integrity sha512-3rDm6KR0jHstte3aL3ugrCyFA1UXY90SWNwRZ2WTmRf/QpOqM35mm0FrRR+HHZQ5fY9+nXFat1nl2ekYJf0P4w==
   dependencies:
     colorette "^1.2.1"
     line-column "^1.0.2"
