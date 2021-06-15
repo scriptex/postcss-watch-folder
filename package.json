@@ -37,7 +37,7 @@
 	"main": "index.js",
 	"repository": "https://github.com/scriptex/postcss-watch-folder",
 	"dependencies": {
-		"chokidar": "3.5.1",
+		"chokidar": "3.5.2",
 		"postcss": "8.3.4"
 	}
 }
