@@ -1,14 +1,13 @@
-const postcss = require('postcss');
 const chokidar = require('chokidar');
 const { appendFile, readFile, writeFileSync, existsSync } = require('fs');
 
 const PRINT = '/*CHANGE*/';
 const PRINT_REG = /\n?\/\*CHANGE\*\//gm;
 
-module.exports = postcss.plugin('postcss-watch-folder', options => {
+module.exports = (options = {}) => {
 	const opts = {
-		folder: '.',
 		main: './style.css',
+		folder: '.',
 		...options
 	};
 
@@ -22,13 +21,18 @@ module.exports = postcss.plugin('postcss-watch-folder', options => {
 
 	const watcher = chokidar.watch(opts.folder);
 
-	return () => {
-		watcher.on('add', () => {
-			appendFile(opts.main, PRINT, () => {
-				readFile(opts.main, 'utf8', (err, data) => {
-					writeFileSync(opts.main, data.replace(PRINT_REG, ''));
+	return {
+		postcssPlugin: 'postcss-watch-folder',
+		Once() {
+			watcher.on('add', () => {
+				appendFile(opts.main, PRINT, () => {
+					readFile(opts.main, 'utf8', (err, data) => {
+						writeFileSync(opts.main, data.replace(PRINT_REG, ''));
+					});
 				});
 			});
-		});
+		}
 	};
-});
+};
+
+module.exports.postcss = true;
