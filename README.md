@@ -30,13 +30,13 @@ This simple plugin solves this issue by watching for `add` event and updating th
 ## Install
 
 ```sh
-npm i postcss-watch-folder --save-dev
+npm i postcss postcss-watch-folder --save-dev
 ```
 
 or
 
 ```sh
-yarn add postcss-watch-folder --dev
+yarn add postcss postcss-watch-folder --dev
 ```
 
 ## Usage

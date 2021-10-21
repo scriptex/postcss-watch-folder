@@ -1,6 +1,6 @@
 {
 	"name": "postcss-watch-folder",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "PostCSS plugin which watches folder for new files",
 	"keywords": [
 		"postcss",
@@ -36,8 +36,11 @@
 	],
 	"main": "index.js",
 	"repository": "https://github.com/scriptex/postcss-watch-folder",
-	"dependencies": {
+	"devDependencies": {
 		"chokidar": "3.5.2",
-		"postcss": "8.3.6"
+		"postcss": "8.3.10"
+	},
+	"peerDependencies": {
+		"postcss": "^8.0.0"
 	}
 }
