@@ -3,42 +3,28 @@
 	"version": "2.0.0",
 	"description": "PostCSS plugin which watches folder for new files",
 	"keywords": [
-		"postcss",
-		"css",
-		"postcss-plugin",
-		"add",
-		"watch",
-		"folder"
+		"PostCSS",
+		"PostCSS plugin"
 	],
-	"homepage": "https://github.com/scriptex/postcss-watch-folder",
+	"homepage": "https://atanas.info/projects/postcss-watch-folder.html",
 	"bugs": {
-		"url": "https://github.com/scriptex/postcss-watch-folder/issues"
+		"url": "https://github.com/scriptex/postcss-watch-folder/issues",
+		"email": "hi@atanas.info"
 	},
 	"license": "MIT",
-	"author": {
-		"name": "Atanas Atanasov",
-		"email": "scriptex.bg@gmail.com",
-		"url": "https://atanas.info"
-	},
-	"funding": [
-		{
-			"type": "individual",
-			"url": "https://www.paypal.me/scriptex"
-		},
-		{
-			"type": "patreon",
-			"url": "https://www.patreon.com/atanas"
-		},
-		{
-			"type": "individual",
-			"url": "https://ko-fi.com/scriptex"
-		}
-	],
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
 	"main": "index.js",
-	"repository": "https://github.com/scriptex/postcss-watch-folder",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/postcss-watch-folder"
+	},
+	"scripts": {},
+	"dependencies": {
+		"postcss": "8.4.16"
+	},
 	"devDependencies": {
-		"chokidar": "3.5.3",
-		"postcss": "8.4.14"
+		"chokidar": "3.5.3"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"
