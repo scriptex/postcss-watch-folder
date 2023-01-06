@@ -21,7 +21,7 @@
 	},
 	"scripts": {},
 	"dependencies": {
-		"postcss": "8.4.20"
+		"postcss": "8.4.21"
 	},
 	"devDependencies": {
 		"chokidar": "3.5.3"
