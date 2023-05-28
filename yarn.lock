@@ -100,10 +100,10 @@ picomatch@^2.0.4, picomatch@^2.2.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-postcss@8.4.22:
-  version "8.4.22"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.22.tgz#c29e6776b60ab3af602d4b513d5bd2ff9aa85dc1"
-  integrity sha512-XseknLAfRHzVWjCEtdviapiBtfLdgyzExD50Rg2ePaucEesyh8Wv4VPdW0nbyDa1ydbrAxV19jvMT4+LFmcNUA==
+postcss@8.4.24:
+  version "8.4.24"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.24.tgz#f714dba9b2284be3cc07dbd2fc57ee4dc972d2df"
+  integrity sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==
   dependencies:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
