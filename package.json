@@ -24,7 +24,7 @@
 		"postcss": "8.4.49"
 	},
 	"devDependencies": {
-		"chokidar": "4.0.1"
+		"chokidar": "4.0.3"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"
